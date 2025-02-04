@@ -1,0 +1,13 @@
+services:
+  nodejs:
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: zippy:latest
+    container_name: zippy
+    volumes:
+      - .:/app
+    ports:
+      - '7777:7777'

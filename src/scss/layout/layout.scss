@@ -1,0 +1,30 @@
+@use '../settings/variables';
+
+@use './header/header';
+@use './content/content';
+@use './footer/footer';
+
+html,
+body {
+  min-height: 100vh;
+}
+
+.website {
+  min-height: 100vh;
+}
+
+.website {
+  // margin: 0 auto;
+
+  // min-width: 320px;
+  // max-width: 1920px;
+
+  // background: #19161b;
+
+  display: grid;
+
+  // header: auto | fixed
+  // content: 1fr
+  // footer auto
+  grid-template-rows: auto 1fr auto;
+}
