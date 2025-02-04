@@ -9,28 +9,200 @@
       {{> header}}
 
       <!-- content -->
-      <div class="content">
+      <main class="content">
+        <div class="hero">
+          <div class="overlay"></div>
+          <div class="container py-lg-8 py-5">
+            <div class="row justify-content-center">
+               <div class="col-xl-8 col-lg-10 col-12">
+                  <div class="b-hero text-center d-flex flex-column gap-5">
+                     <div class="d-flex flex-column gap-3 mx-lg-8">
+                        <h1 class="text-light mb-0 display-5">CRM система для складського обліку та торгівлі</h1>
+                        <p class="text-light mb-0 lead">Альтернатива для 1С та інших платних рішень</p>
+                     </div>
+
+                     <div class="d-flex flex-row gap-2 justify-content-center">
+                        <a href="" class="btn btn-primary">Демо сайт</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block top-info">
+          <div class="container">
+            <div class="row">
+              <div class="c1 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 col-xxl-5">
+                <ul class="top-info--list list-group list-group-flush">
+                  <li class="list-group-item">Склад, торгівля, послуги, виробництво</li>
+                  <li class="list-group-item">Налаштована на вітчизняне законодавство</li>
+                  <li class="list-group-item">Орієнтована на малий бізнес</li>
+                  <li class="list-group-item">Веб інтефейс, відкритий код (open-source)</li>
+                  <li class="list-group-item">Розповсюджується безкоштовно</li>
+                </ul>
+
+                <ul class="top-info--links pt-4 list-group list-group-horizontal">
+                  <li class="list-group-item">
+                    <a href="#" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Демо</a>
+                  </li>
+
+                  <li class="list-group-item">
+                    <a href="#" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Встановлення</a>
+                  </li>
+
+                  <li class="list-group-item">
+                    <a href="#" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">GutHub</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="c2 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7 col-xxl-7">
+                <picture>
+                  <img src="./images/hero.png" class="img-fluid img-thumbnail" alt="...">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div id="about" class="block about">
           <div class="container">
-            <h2>Про проект</h2>
+            <h2 class="pb-3">Про проект</h2>
 
+            <article class="about-article">
+              <p>Zippy CRM - це вільно росповсюджуване ПЗ з відкритим кодом та веб-інтерфейсом, призначене для автоматизації малого бізнесу. Облікова система орієнтована на вітчизняний ринок, має звичний інтерфейс, проста в установці та налаштуванні, з модульною архітектурою, що дозволяє легко адаптувати її під вимоги бізнесу.</p>
+              <p>Стандартний документообіг, звичний для вітчизняних користувчів (особливо звиклих до 1С) інтерфейс, можливість багатокористувацької роботи та роботи через Інтернет з будь якого мобільного пристрою. </p>
+              <p>Мета проекту - надати альтернативу платним та/або зарубіжним обліковим програмам.</p>
+              <p>Використано найпростіший та найпоширеніший технологічний стек (PHP/Mysql), що забезпечує кросплатформенність та можливість установки на будь якому хостингу або офісному комп'ютері для індивідуального використання. З точки зору архітектури проект є платформою, де основні об'єкти - документи, довідники, звіти можуть додаватись, видалятись та замінюватись без внесення змін в ядро платформи та структуру бази данних. </p>
+            </article>
+
+            <div class="b-video">
+              <div class="quote-video" id="ytplayer"></div>
+            </div>
           </div>
         </div>
 
         <div id="opportunities" class="block opportunities">
           <div class="container">
-            <h2>Можливості</h2>
+            <h2 class="pb-3">Можливості</h2>
+            <div class="row">
+              <div class="c1 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                <h3>Функції</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Управління складами, складська логістика</li>
+                  <li class="list-group-item">Управління закупівлями та продажами</li>
+                  <li class="list-group-item">Облік платежів та взаєморозрахунки з контрагентами</li>
+                  <li class="list-group-item">Облік по партіях товару та серіях виробника</li>
+                  <li class="list-group-item">Управління користувачами та розділення доступу</li>
+                  <li class="list-group-item">Контрагенти, робота з лідами</li>
+                  <li class="list-group-item">Можливість локалізації</li>
+                  <li class="list-group-item">Звіти по продажам, закупкам, руху ТМЦ</li>
+                  <li class="list-group-item">Послуги, наряди на виконання робіт</li>
+                  <li class="list-group-item">Списання на виробництво та оприходування готової продукції</li>
+                  <li class="list-group-item">Облік обладнання</li>
+                </ul>
+              </div>
 
+              <div class="c2 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                <h3>Інтеграції</h3>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">API для обміну з іншми інформаційними системами</li>
+                  <li class="list-group-item">Підтримка сканера (клавіатурного) штрих коду</li>
+                  <li class="list-group-item">Підтримка принтера чеків та етикеток</li>
+                  <li class="list-group-item">Розділення доступу між філіями (наприклад, торговими точками)</li>
+
+                  <li class="list-group-item">Інтеграція з Опенкарт та Вукомерс</li>
+                  <li class="list-group-item">SMS розсилки</li>
+                  <li class="list-group-item">Інтеграція з Новою Поштою</li>
+                  <li class="list-group-item">Інтеграція з CheckBox та ВчасноКаса</li>
+                  <li class="list-group-item">Вбудований (безкоштовний) програмний РРО</li>
+                  <li class="list-group-item">Рiзноманiтнi модулі та додатки (управління проектами, база знань та ін.).</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
         <div id="advantages" class="block advantages">
           <div class="container">
-            <h2>Переваги рішення</h2>
+            <h2 class="pb-3">Переваги рішення</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-3 gy-5 gy-md-7">
+              <div class="col">
+                <div class="card bg-light h-100 p-3 text-center">
+                  <div class="card-body pb-0">
+                    <div class="">
+                      <i class=""></i>
+                    </div>
+                    <h5 class="mb-3">Відкритий код</h5>
+                    <p>Дозволяє не залежати від виробника ПЗ, оперативно вносити виправлення та зміни</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card bg-light h-100 p-3 text-center">
+                  <div class="card-body pb-0">
+                    <div class="">
+                      <i class=""></i>
+                    </div>
+                    <h5 class="mb-3">Під будь який бізнес</h5>
+                    <p>Простота розширення та налаштування під будь який тип бізнесу та мінливе законодавство</p>
+                  </div>
+                </div>
+              </div>
 
+              <div class="col">
+                <div class="card bg-light h-100 p-3 text-center">
+                  <div class="card-body pb-0">
+                    <div class="">
+                      <i class=""></i>
+                    </div>
+                    <h5 class="mb-3">Кросплатформенність</h5>
+                    <p>З програмою можна повноцінно працювати як всередині корпоративної мережі, так і онлайн</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card bg-light h-100 p-3 text-center">
+                  <div class="card-body pb-0">
+                    <div class="">
+                      <i class=""></i>
+                    </div>
+                    <h5 class="mb-3">Адаптивний інтефейс</h5>
+                    <p>Веб-інтерфейс дозволяє повноцінно працювати з будь яких пристроїв, у тому числі мобільних </p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="card bg-light h-100 p-3 text-center">
+                  <div class="card-body pb-0">
+                    <div class="">
+                      <i class=""></i>
+                    </div>
+                    <h5 class="mb-3">Налаштовано під законодавство</h5>
+                    <p>Базове налаштування під вітчизняне законодавство. Передбачено експорт в електронний формат обміну</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col">
+                <div class="card bg-light h-100 p-3 text-center">
+                  <div class="card-body pb-0">
+                    <div class="">
+                      <i class=""></i>
+                    </div>
+                    <h5 class="mb-3">Онлайн-торгівля</h5>
+                    <p>Інтеграція з поширеними інтернет магазинами. Вбудований онлайн-каталог</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </main>
       <!-- end content -->
 
       {{> footer}}
