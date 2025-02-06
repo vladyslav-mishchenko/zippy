@@ -1,0 +1,122 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import '../node_modules/bootstrap/scss/functions';
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import '../node_modules/bootstrap/scss/variables';
+// @import '../node_modules/bootstrap/scss/variables-dark';
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/mixins';
+// @import '../node_modules/bootstrap/scss/root';
+
+.opportunities {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  background-color: #343f51;
+
+  h2 {
+    color: #ffffff;
+  }
+
+  h3 {
+    padding-bottom: 5px;
+    color: #31c2c7;
+  }
+
+  h4 {
+    color: #ffffff;
+  }
+
+  .info {
+    > .c1 {
+      @include make-col(6);
+      @include media-breakpoint-down(xl) {
+        @include make-col(12);
+      }
+    }
+
+    > .c2 {
+      padding-top: 25px;
+      @include make-col(6);
+      @include media-breakpoint-down(xl) {
+        @include make-col(12);
+      }
+    }
+  }
+
+  .demo {
+    padding-top: 50px;
+
+    > .c1 {
+      @include make-col(5);
+      @include media-breakpoint-down(xl) {
+        @include make-col(12);
+      }
+    }
+
+    > .c2 {
+      @include make-col(6);
+      @include media-breakpoint-down(xl) {
+        @include make-col(12);
+      }
+    }
+  }
+}
+
+.demo-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  gap: 25px;
+}
+
+.demo-credentials {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    color: #ffffff;
+  }
+}
+
+.demo-about {
+  padding-top: 15px;
+  color: #ffffff;
+}
+
+.opportunities-functions {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  li {
+    color: #ffffff;
+  }
+}
+
+.opportunities-integrations {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  li {
+    color: #ffffff;
+  }
+}

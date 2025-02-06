@@ -1,1 +1,7 @@
-.content{}
+@use './hero/hero';
+@use './about/about';
+@use './opportunities/opportunities';
+@use './advantages/advantages';
+
+.content {
+}

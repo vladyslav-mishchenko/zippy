@@ -14,50 +14,38 @@
 @import '../node_modules/bootstrap/scss/mixins';
 // @import '../node_modules/bootstrap/scss/root';
 
-.footer {
-  padding: 100px 0 100px 0;
-  background-color: #343f51;
-
-  h5 {
-    color: $gray-500;
+.about {
+  .c1 {
+    padding: 0 50px 0 0;
+    @include make-col(6);
+    @include media-breakpoint-down(lg) {
+      padding: 0 10px 0 10px;
+      @include make-col(12);
+    }
   }
-}
 
-.footer-menu {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-
-  li {
-    a {
-      color: $gray-300;
-      transition: color 0.2s linear;
-
-      text-decoration: none;
-
-      &:hover {
-        color: #2295f7;
-      }
+  .c2 {
+    @include make-col(6);
+    @include media-breakpoint-down(lg) {
+      padding-top: 25px;
+      @include make-col(12);
     }
   }
 }
 
-.footer-logo {
-  font-size: 18px;
-  color: #ffffff;
+#ytplayer {
+  display: block;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
 }
 
-.footer-about {
-  margin: 0;
-  padding: 15px 0 0 0;
-  list-style-type: none;
-
-  font-size: 14px;
-  color: $gray-500;
-
-  > .crm {
+.article-about {
+  p {
   }
 
-  > .copyright {
+  .accent {
+    font-size: 22px;
   }
 }
