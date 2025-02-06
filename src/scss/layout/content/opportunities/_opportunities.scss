@@ -42,9 +42,9 @@
     }
 
     > .c2 {
-      padding-top: 25px;
       @include make-col(6);
       @include media-breakpoint-down(xl) {
+        padding-top: 25px;
         @include make-col(12);
       }
     }
@@ -98,12 +98,22 @@
   padding: 0;
   list-style-type: none;
 
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-
   li {
     color: #ffffff;
+
+    margin: 5px 0 5px 0;
+
+    &:first-child {
+      margin: 0 0 5px 0;
+    }
+
+    &:last-child {
+      margin: 5px 0 0 0;
+    }
+
+    &:only-child {
+      margin: 0 0 0 0;
+    }
   }
 }
 
@@ -112,11 +122,21 @@
   padding: 0;
   list-style-type: none;
 
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-
   li {
     color: #ffffff;
+
+    margin: 5px 0 5px 0;
+
+    &:first-child {
+      margin: 0 0 5px 0;
+    }
+
+    &:last-child {
+      margin: 5px 0 0 0;
+    }
+
+    &:only-child {
+      margin: 0 0 0 0;
+    }
   }
 }

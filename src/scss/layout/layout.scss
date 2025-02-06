@@ -7,6 +7,9 @@
 .html {
 }
 
+body {
+}
+
 html,
 body {
   min-height: 100vh;
@@ -17,12 +20,12 @@ body {
 }
 
 .website {
-  // margin: 0 auto;
+  margin: 0 auto;
 
   // min-width: 320px;
   // max-width: 1920px;
 
-  // background: #19161b;
+  background: #ffffff;
 
   display: grid;
 

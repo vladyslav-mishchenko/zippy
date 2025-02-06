@@ -10,15 +10,21 @@
 
       <!-- content -->
       <main class="content">
-        <div class="hero">
+        <div class="main-banner">
           <div class="container">
-            <div class="row">
-              <div class="titles">
+            <div class="main-banner--row">
+              <div class="c1">
                 <h1>CRM система для складського обліку та торгівлі</h1>
-                <p class="subtitle">Альтернатива для 1С та інших платних рішень</p>
+                <p class="description">Альтернатива для 1С та інших платних рішень</p>
               </div>
             </div>
+          </div>
 
+          <div class="overlay"></div>
+        </div>
+
+        <div class="hero">
+          <div class="container">
             <div class="row info">
               <div class="c1">
                 <ul class="hero-list">
@@ -59,11 +65,11 @@
               <div class="c2">
                 <article class="article-about">
                   <p>
-                    <span class="fw-bold text-info-emphasis accent">Zippy CRM</span> - це вільно
-                    росповсюджуване ПЗ з відкритим кодом та веб-інтерфейсом, призначене для
-                    автоматизації малого бізнесу. Облікова система орієнтована на вітчизняний ринок,
-                    має звичний інтерфейс, проста в установці та налаштуванні, з модульною
-                    архітектурою, що дозволяє легко адаптувати її під вимоги бізнесу.
+                    <span class="accent">Zippy CRM</span> - це вільно росповсюджуване ПЗ з відкритим
+                    кодом та веб-інтерфейсом, призначене для автоматизації малого бізнесу. Облікова
+                    система орієнтована на вітчизняний ринок, має звичний інтерфейс, проста в
+                    установці та налаштуванні, з модульною архітектурою, що дозволяє легко
+                    адаптувати її під вимоги бізнесу.
                   </p>
                   <p>
                     Стандартний документообіг, звичний для вітчизняних користувчів (особливо звиклих
@@ -95,21 +101,17 @@
               <div class="c1">
                 <h3>Функції</h3>
                 <ul class="opportunities-functions">
-                  <li class="list-group-item">Управління складами, складська логістика</li>
-                  <li class="list-group-item">Управління закупівлями та продажами</li>
-                  <li class="list-group-item">
-                    Облік платежів та взаєморозрахунки з контрагентами
-                  </li>
-                  <li class="list-group-item">Облік по партіях товару та серіях виробника</li>
-                  <li class="list-group-item">Управління користувачами та розділення доступу</li>
-                  <li class="list-group-item">Контрагенти, робота з лідами</li>
-                  <li class="list-group-item">Можливість локалізації</li>
-                  <li class="list-group-item">Звіти по продажам, закупкам, руху ТМЦ</li>
-                  <li class="list-group-item">Послуги, наряди на виконання робіт</li>
-                  <li class="list-group-item">
-                    Списання на виробництво та оприходування готової продукції
-                  </li>
-                  <li class="list-group-item">Облік обладнання</li>
+                  <li>Управління складами, складська логістика</li>
+                  <li>Управління закупівлями та продажами</li>
+                  <li>Облік платежів та взаєморозрахунки з контрагентами</li>
+                  <li>Облік по партіях товару та серіях виробника</li>
+                  <li>Управління користувачами та розділення доступу</li>
+                  <li>Контрагенти, робота з лідами</li>
+                  <li>Можливість локалізації</li>
+                  <li>Звіти по продажам, закупкам, руху ТМЦ</li>
+                  <li>Послуги, наряди на виконання робіт</li>
+                  <li>Списання на виробництво та оприходування готової продукції</li>
+                  <li>Облік обладнання</li>
                 </ul>
               </div>
 
@@ -159,90 +161,104 @@
         <div id="advantages" class="page-block advantages">
           <div class="container">
             <h2 class="pb-5 text-center">Переваги рішення</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-3 gy-5 gy-md-7">
-              <div class="col">
-                <div class="card bg-light h-100 p-3 text-center">
-                  <div class="card-body pb-0">
-                    <div class="">
-                      <i class=""></i>
-                    </div>
-                    <h5 class="mb-3">Відкритий код</h5>
-                    <p>
-                      Дозволяє не залежати від виробника ПЗ, оперативно вносити виправлення та зміни
-                    </p>
-                  </div>
+
+            <div class="advantages-cards">
+              <div class="card">
+                <div class="image">
+                  <i class="">i</i>
+                </div>
+
+                <div class="title">
+                  <h5>Відкритий код</h5>
+                </div>
+
+                <div class="text">
+                  <p>
+                    Простота розширення та налаштування під будь який тип бізнесу та мінливе
+                    законодавство
+                  </p>
                 </div>
               </div>
 
-              <div class="col">
-                <div class="card bg-light h-100 p-3 text-center">
-                  <div class="card-body pb-0">
-                    <div class="">
-                      <i class=""></i>
-                    </div>
-                    <h5 class="mb-3">Під будь який бізнес</h5>
-                    <p>
-                      Простота розширення та налаштування під будь який тип бізнесу та мінливе
-                      законодавство
-                    </p>
-                  </div>
+              <div class="card">
+                <div class="image">
+                  <i class="">i</i>
+                </div>
+
+                <div class="title">
+                  <h5>Під будь який бізнес</h5>
+                </div>
+
+                <div class="text">
+                  <p>
+                    Простота розширення та налаштування під будь який тип бізнесу та мінливе
+                    законодавство
+                  </p>
                 </div>
               </div>
 
-              <div class="col">
-                <div class="card bg-light h-100 p-3 text-center">
-                  <div class="card-body pb-0">
-                    <div class="">
-                      <i class=""></i>
-                    </div>
-                    <h5 class="mb-3">Кросплатформенність</h5>
-                    <p>
-                      З програмою можна повноцінно працювати як всередині корпоративної мережі, так
-                      і онлайн
-                    </p>
-                  </div>
+              <div class="card">
+                <div class="image">
+                  <i class="">i</i>
+                </div>
+
+                <div class="title">
+                  <h5>Кросплатформенність</h5>
+                </div>
+
+                <div class="text">
+                  <p>
+                    З програмою можна повноцінно працювати як всередині корпоративної мережі, так і
+                    онлайн
+                  </p>
                 </div>
               </div>
 
-              <div class="col">
-                <div class="card bg-light h-100 p-3 text-center">
-                  <div class="card-body pb-0">
-                    <div class="">
-                      <i class=""></i>
-                    </div>
-                    <h5 class="mb-3">Адаптивний інтефейс</h5>
-                    <p>
-                      Веб-інтерфейс дозволяє повноцінно працювати з будь яких пристроїв, у тому
-                      числі мобільних
-                    </p>
-                  </div>
+              <div class="card">
+                <div class="image">
+                  <i class="">i</i>
+                </div>
+
+                <div class="title">
+                  <h5>Адаптивний інтефейс</h5>
+                </div>
+
+                <div class="title">
+                  <p>
+                    Веб-інтерфейс дозволяє повноцінно працювати з будь яких пристроїв, у тому числі
+                    мобільних
+                  </p>
                 </div>
               </div>
 
-              <div class="col">
-                <div class="card bg-light h-100 p-3 text-center">
-                  <div class="card-body pb-0">
-                    <div class="">
-                      <i class=""></i>
-                    </div>
-                    <h5 class="mb-3">Налаштовано під законодавство</h5>
-                    <p>
-                      Базове налаштування під вітчизняне законодавство. Передбачено експорт в
-                      електронний формат обміну
-                    </p>
-                  </div>
+              <div class="card">
+                <div class="image">
+                  <i class="">i</i>
+                </div>
+
+                <div class="title">
+                  <h5>Налаштовано під законодавство</h5>
+                </div>
+
+                <div class="text">
+                  <p>
+                    Базове налаштування під вітчизняне законодавство. Передбачено експорт в
+                    електронний формат обміну
+                  </p>
                 </div>
               </div>
 
-              <div class="col">
-                <div class="card bg-light h-100 p-3 text-center">
-                  <div class="card-body pb-0">
-                    <div class="">
-                      <i class=""></i>
-                    </div>
-                    <h5 class="mb-3">Онлайн-торгівля</h5>
-                    <p>Інтеграція з поширеними інтернет магазинами. Вбудований онлайн-каталог</p>
-                  </div>
+              <div class="card">
+                <div class="image">
+                  <i class="">i</i>
+                </div>
+
+                <div class="title">
+                  <h5>Онлайн-торгівля</h5>
+                </div>
+
+                <div class="text">
+                  <p>Інтеграція з поширеними інтернет магазинами. Вбудований онлайн-каталог</p>
                 </div>
               </div>
             </div>

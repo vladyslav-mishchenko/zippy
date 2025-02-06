@@ -22,29 +22,8 @@
 
   background-color: #343f51;
 
-  h1 {
-    font-size: 36px;
-    color: #ffffff;
-
-    @include media-breakpoint-down(md) {
-      font-size: 24px;
-    }
-  }
-
-  .subtitle {
-    color: #31c2c7;
-    font-size: 24px;
-
-    @include media-breakpoint-down(md) {
-      font-size: 18px;
-    }
-  }
-
-  .titles {
-    @include make-col(6);
-    @include media-breakpoint-down(xl) {
-      @include make-col(12);
-    }
+  @include media-breakpoint-down(lg) {
+    padding-top: 25px;
   }
 
   .info {
@@ -87,7 +66,7 @@
     position: absolute;
     top: auto;
     right: 0;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
 
     width: 100%;
@@ -104,7 +83,20 @@
   list-style-type: none;
 
   li {
-    font-size: 18px;
+    margin: 5px 0 5px 0;
+
+    &:first-child {
+      margin: 0 0 5px 0;
+    }
+
+    &:last-child {
+      margin: 5px 0 0 0;
+    }
+
+    &:only-child {
+      margin: 0 0 0 0;
+    }
+
     color: #ffffff;
 
     @include media-breakpoint-down(md) {

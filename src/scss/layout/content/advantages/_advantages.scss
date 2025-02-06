@@ -1,7 +1,67 @@
-.advantages {
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import '../node_modules/bootstrap/scss/functions';
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import '../node_modules/bootstrap/scss/variables';
+// @import '../node_modules/bootstrap/scss/variables-dark';
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/mixins';
+// @import '../node_modules/bootstrap/scss/root';
+
+.advantages-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+
+  @include media-breakpoint-only(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include media-breakpoint-only(sm) {
+    grid-template-columns: 1fr;
+  }
+
+  @include media-breakpoint-only(xs) {
+    grid-template-columns: 1fr;
+  }
+
   .card {
     background: #ffffff;
     box-shadow: 0px 10px 20px 0px rgba(52, 63, 81, 0.25);
     border-radius: 5px;
+
+    .image {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+      }
+    }
+
+    .title {
+      text-align: center;
+      padding: 0 15px;
+
+      h5 {
+      }
+    }
+
+    .text {
+      text-align: center;
+      padding: 0 15px 15px 15px;
+
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    }
   }
 }

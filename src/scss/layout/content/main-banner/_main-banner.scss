@@ -1,0 +1,76 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import '../node_modules/bootstrap/scss/functions';
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import '../node_modules/bootstrap/scss/variables';
+// @import '../node_modules/bootstrap/scss/variables-dark';
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/mixins';
+// @import '../node_modules/bootstrap/scss/root';
+
+.main-banner {
+  position: relative;
+  z-index: 0;
+
+  background: url('/images/bg.jpeg');
+  background-size: cover;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+
+    @include media-breakpoint-down(md) {
+    }
+  }
+
+  .description {
+    margin: 25px 0 0 0;
+    padding: 0;
+
+    font-size: 1.2rem;
+    color: #31c2c7;
+
+    @include media-breakpoint-down(md) {
+    }
+  }
+
+  .main-banner--row {
+    min-height: 400px;
+
+    position: relative;
+    z-index: 1;
+
+    @include make-row();
+    justify-content: center;
+    align-items: center;
+
+    @include media-breakpoint-down(md) {
+      min-height: 300px;
+    }
+
+    .c1 {
+      text-align: center;
+      @include make-col(7);
+      @include media-breakpoint-down(lg) {
+        @include make-col(12);
+      }
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: #000000da;
+  }
+}
