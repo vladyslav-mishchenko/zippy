@@ -1,18 +1,7 @@
-// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import '../node_modules/bootstrap/scss/functions';
-
-// 2. Include any default variable overrides here
-
-// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import '../node_modules/bootstrap/scss/variables';
-// @import '../node_modules/bootstrap/scss/variables-dark';
-
-// 4. Include any default map overrides here
-
-// 5. Include remainder of required parts
 @import '../node_modules/bootstrap/scss/maps';
 @import '../node_modules/bootstrap/scss/mixins';
-// @import '../node_modules/bootstrap/scss/root';
 
 .main-banner {
   position: relative;
@@ -32,17 +21,14 @@
 
   .description {
     margin: 25px 0 0 0;
-    padding: 0;
+    padding: 0 15px;
 
     font-size: 1.2rem;
-    color: #31c2c7;
-
-    @include media-breakpoint-down(md) {
-    }
+    color: #ffffff;
   }
 
   .main-banner--row {
-    min-height: 400px;
+    min-height: 300px;
 
     position: relative;
     z-index: 1;
