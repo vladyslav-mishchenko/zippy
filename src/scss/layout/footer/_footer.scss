@@ -27,16 +27,22 @@
   }
 
   .footer--row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+    
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
     gap: 25px;
 
     @include media-breakpoint-down(xl) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: auto auto;
+      justify-content: space-around;
     }
 
     @include media-breakpoint-down(md) {
       grid-template-columns: auto;
+      justify-content: start;
     }
 
     .c {
