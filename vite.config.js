@@ -36,6 +36,21 @@ export default defineConfig({
     rollupOptions: {
       input: {
         home: resolve(root, 'index.html'),
+        faq: resolve(root, 'faq.html'),
+        contacts: resolve(root, 'contacts.html'),
+
+        ext: resolve(root, 'knowledge-base/ext.html'),
+        update: resolve(root, 'knowledge-base/update.html'),
+        zstore: resolve(root, 'knowledge-base/zstore.html'),
+        zstoredoc: resolve(root, 'knowledge-base/zstoredoc.html'),
+        zstoreusage: resolve(root, 'knowledge-base/zstoreusage.html'),
+
+        frm: resolve(root, 'other-projects/frm.html'),
+        notty: resolve(root, 'other-projects/notty.html'),
+        ppo: resolve(root, 'other-projects/ppo.html'),
+        zdb: resolve(root, 'other-projects/zdb.html'),
+
+
       },
 
       output: {

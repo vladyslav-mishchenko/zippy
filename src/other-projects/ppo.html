@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> head}}
+  </head>
+
+  <body class="body">
+    <div class="website">
+      {{> header}}
+
+      <!-- content -->
+      <main class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <article class="article">
+                <h1>Бібліотека для цифрового підпису</h1>
+
+                <p>
+                  Бібліотека для цифрового підпису документів, що надсилаються до податкової
+                  (Україна)
+                </p>
+                <p>Основний репозiторiй на Гiтхабi</p>
+                <p>Розпаковка ключа та сертифiкату</p>
+
+                <pre><code class="php"> 
+$cert =    \PPOLib\Cert::load($certdata) ;
+$key =   \PPOLib\KeyStore::load($keydata,$password,$cert );
+                </code></pre>
+
+                <p>Де:</p>
+
+                <ul>
+                  <li>$certdata - змiст файлу сертифiката</li>
+                  <li>$keydata - змiст файлу ключа</li>
+                  <li>$password - пароль до ключа</li>
+                </ul>
+
+                <p>
+                  Оскільки розпакування відбувається досить повільно, об'єкти $cert і $key слід
+                  покласти в сесію, або серіалізувати та сховати у надійному сховищі для подальшого
+                  використання Підпис документа або команди
+                </p>
+
+                <pre><code class="php"> 
+$signeddata=  \PPOLib\PPO::sign('{"Command":"Objects"}'',$key,$cert);
+                </code></pre>
+
+                <p>Відправка запиту в податкову</p>
+
+                <pre><code class="php"> 
+$answer =  \PPOLib\PPO::send($signeddata,'cmd')  ;
+                </code></pre>
+
+                <p>
+                  Якщо надсилається документ, відповіддю будуть підписані дані, з яких потрібно
+                  вийняти документ з відповіді (зазвичай xml)
+                </p>
+
+                <pre><code class="php"> 
+$data = \PPOLib\PPO::decrypt($answer,true) ;
+                </code></pre>
+              </article>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- end content -->
+
+      {{> footer}}
+    </div>
+
+    {{> scripts}}
+  </body>
+</html>
