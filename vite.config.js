@@ -13,7 +13,7 @@ export default defineConfig({
   server: {
     port: 7777,
     host: true,
-    // open: "index.html"
+    open: '',
   },
 
   preview: {
@@ -49,8 +49,6 @@ export default defineConfig({
         notty: resolve(root, 'other-projects/notty.html'),
         ppo: resolve(root, 'other-projects/ppo.html'),
         zdb: resolve(root, 'other-projects/zdb.html'),
-
-
       },
 
       output: {

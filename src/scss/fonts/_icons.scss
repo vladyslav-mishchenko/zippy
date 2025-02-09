@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'icons';
+  src: url('fonts/icons/icons.eot?nh14j9');
+  src:
+    url('fonts/icons/icons.eot?nh14j9#iefix') format('embedded-opentype'),
+    url('fonts/icons/icons.ttf?nh14j9') format('truetype'),
+    url('fonts/icons/icons.woff?nh14j9') format('woff'),
+    url('fonts/icons/icons.svg?nh14j9#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-code-block:before {
+  content: '\e903';
+}
+.icon-online-trading:before {
+  content: '\e900';
+}
+.icon-mail:before {
+  content: '\e901';
+}
+.icon-cross-platform:before {
+  content: '\e902';
+  color: #31c2c7;
+}
+.icon-coat-of-arms:before {
+  content: '\e904';
+  color: #31c2c7;
+}
+.icon-check:before {
+  content: '\e905';
+  color: #31c2c7;
+}
+.icon-card:before {
+  content: '\e906';
+  color: #00b2ff;
+}
+.icon-business:before {
+  content: '\e907';
+  color: #31c2c7;
+}
+.icon-attention:before {
+  content: '\e908';
+  color: #ff8f27;
+}
+.icon-adaptive:before {
+  content: '\e90a';
+  color: #31c2c7;
+}
+.icon-download3:before {
+  content: '\e9c7';
+}
+.icon-sphere:before {
+  content: '\e9c9';
+}
+.icon-warning:before {
+  content: '\ea07';
+}
+.icon-notification:before {
+  content: '\ea08';
+}
+.icon-question:before {
+  content: '\ea09';
+}
+.icon-plus:before {
+  content: '\ea0a';
+}
+.icon-minus:before {
+  content: '\ea0b';
+}
+.icon-info:before {
+  content: '\ea0c';
+}
+.icon-checkmark:before {
+  content: '\ea10';
+}
+.icon-facebook2:before {
+  content: '\ea91';
+}
+.icon-whatsapp:before {
+  content: '\ea93';
+}
+.icon-telegram:before {
+  content: '\ea95';
+}
+.icon-youtube:before {
+  content: '\ea9d';
+}
+.icon-github:before {
+  content: '\eab0';
+}
+.icon-skype:before {
+  content: '\eac5';
+}
+.icon-linkedin:before {
+  content: '\eac9';
+}

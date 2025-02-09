@@ -1,8 +1,12 @@
+// homepage
 @use './hero/hero';
 @use './about/about';
 @use './opportunities/opportunities';
 @use './advantages/advantages';
 @use './main-banner/main-banner';
+
+// contacts
+@use './contacts/contacts';
 
 .content {
 }
@@ -26,6 +30,37 @@
     list-style-type: none;
 
     li {
+    }
+  }
+}
+
+.article {
+  .page-nav--target {
+    scroll-margin-top: 80px;
+  }
+
+  .page-nav {
+    li {
+    }
+
+    .title {
+      margin: 10px 0;
+    }
+  }
+
+  .page-subnav {
+    margin: 0;
+    padding: 0 0 0 15px;
+  }
+}
+
+.article {
+  pre {
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: #cfcfcf;
+
+    code {
     }
   }
 }
