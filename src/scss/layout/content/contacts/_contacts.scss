@@ -1,5 +1,12 @@
 .contacts {
-  dl {
+  dt {
+    a {
+      text-decoration: none;
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
   }
 
   dd {
@@ -13,6 +20,9 @@
 
 .contacts-form-info {
   dt {
+    .icon {
+      margin-right: 5px;
+    }
   }
 
   dd {

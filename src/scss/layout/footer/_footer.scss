@@ -50,12 +50,23 @@
       transition: color 0.2s linear;
 
       font-size: 1rem;
-
       text-decoration: none;
 
       &:hover {
         color: #2295f7;
+
+        .icon {
+          color: #2295f7;
+        }
       }
+    }
+
+    .icon {
+      margin-right: 10px;
+      font-size: 16px;
+
+      transition: color 0.2s linear;
+      color: #ffffff;
     }
   }
 }

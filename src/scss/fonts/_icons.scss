@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'icons';
-  src: url('fonts/icons/icons.eot?nh14j9');
+  src: url('fonts/icons/icons.eot?lbhb46');
   src:
-    url('fonts/icons/icons.eot?nh14j9#iefix') format('embedded-opentype'),
-    url('fonts/icons/icons.ttf?nh14j9') format('truetype'),
-    url('fonts/icons/icons.woff?nh14j9') format('woff'),
-    url('fonts/icons/icons.svg?nh14j9#icons') format('svg');
+    url('fonts/icons/icons.eot?lbhb46#iefix') format('embedded-opentype'),
+    url('fonts/icons/icons.ttf?lbhb46') format('truetype'),
+    url('fonts/icons/icons.woff?lbhb46') format('woff'),
+    url('fonts/icons/icons.svg?lbhb46#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,45 +27,63 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-code-block:before {
-  content: '\e903';
-}
-.icon-online-trading:before {
+.icon-plus-white:before {
   content: '\e900';
 }
-.icon-mail:before {
+.icon-plus-1:before {
   content: '\e901';
 }
-.icon-cross-platform:before {
+.icon-online-trading:before {
   content: '\e902';
-  color: #31c2c7;
+}
+.icon-mail:before {
+  content: '\e903';
+}
+.icon-cross-platform:before {
+  content: '\e904';
+  font-size: 140px;
+}
+.icon-code-5:before {
+  content: '\e905';
+}
+.icon-code-4:before {
+  content: '\e906';
+}
+.icon-code-3:before {
+  content: '\e907';
+}
+.icon-code-2:before {
+  content: '\e908';
+}
+.icon-code-1:before {
+  content: '\e909';
 }
 .icon-coat-of-arms:before {
-  content: '\e904';
-  color: #31c2c7;
+  content: '\e90a';
 }
 .icon-check:before {
-  content: '\e905';
-  color: #31c2c7;
+  content: '\e90b';
 }
 .icon-card:before {
-  content: '\e906';
-  color: #00b2ff;
+  content: '\e90c';
 }
 .icon-business:before {
-  content: '\e907';
-  color: #31c2c7;
+  content: '\e90d';
 }
 .icon-attention:before {
-  content: '\e908';
-  color: #ff8f27;
+  content: '\e90e';
+}
+.icon-arrow-down:before {
+  content: '\e90f';
 }
 .icon-adaptive:before {
-  content: '\e90a';
-  color: #31c2c7;
+  content: '\e910';
 }
 .icon-download3:before {
   content: '\e9c7';
+}
+.icon-upload3:before {
+  content: '\e9c8';
 }
 .icon-sphere:before {
   content: '\e9c9';
@@ -88,14 +106,11 @@
 .icon-info:before {
   content: '\ea0c';
 }
+.icon-cross:before {
+  content: '\ea0f';
+}
 .icon-checkmark:before {
   content: '\ea10';
-}
-.icon-facebook2:before {
-  content: '\ea91';
-}
-.icon-whatsapp:before {
-  content: '\ea93';
 }
 .icon-telegram:before {
   content: '\ea95';
