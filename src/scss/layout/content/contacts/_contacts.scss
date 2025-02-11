@@ -1,33 +1,33 @@
 .contacts {
-  dt {
-    a {
-      text-decoration: none;
+    dt {
+        a {
+            text-decoration: none;
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
     }
 
-    .icon {
-      margin-right: 10px;
+    dd {
     }
-  }
-
-  dd {
-  }
 }
 
 .donate-cards {
-  li {
-  }
+    li {
+    }
 }
 
 .contacts-form-info {
-  dt {
-    .icon {
-      margin-right: 5px;
+    dt {
+        .icon {
+            margin-right: 5px;
+        }
     }
-  }
 
-  dd {
-    margin-top: 1rem;
-  }
+    dd {
+        margin-top: 1rem;
+    }
 }
 
 .contact-form--btn {

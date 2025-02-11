@@ -4,107 +4,107 @@
 @import '../node_modules/bootstrap/scss/mixins';
 
 .footer {
-  padding: 100px 0 100px 0;
-  background-color: #343f51;
+    padding: 100px 0 100px 0;
+    background-color: #343f51;
 
-  h5 {
-    color: $gray-500;
-  }
-
-  @include media-breakpoint-down(lg) {
-    padding: 50px 0 50px 0;
-  }
-
-  .footer--row {
-    width: 100%;
-    height: auto;
-
-    display: inline-grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-between;
-    gap: 25px;
-
-    @include media-breakpoint-down(xl) {
-      grid-template-columns: auto auto;
-      justify-content: space-around;
+    h5 {
+        color: $gray-500;
     }
 
-    @include media-breakpoint-down(md) {
-      grid-template-columns: auto;
-      justify-content: start;
+    @include media-breakpoint-down(lg) {
+        padding: 50px 0 50px 0;
     }
 
-    .c {
+    .footer--row {
+        width: 100%;
+        height: auto;
+
+        display: inline-grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-between;
+        gap: 25px;
+
+        @include media-breakpoint-down(xl) {
+            grid-template-columns: auto auto;
+            justify-content: space-around;
+        }
+
+        @include media-breakpoint-down(md) {
+            grid-template-columns: auto;
+            justify-content: start;
+        }
+
+        .c {
+        }
     }
-  }
 }
 
 .footer-menu {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 
-  li {
-    a {
-      color: $gray-300;
-      transition: color 0.2s linear;
+    li {
+        a {
+            color: $gray-300;
+            transition: color 0.2s linear;
 
-      font-size: 1rem;
-      text-decoration: none;
+            font-size: 1rem;
+            text-decoration: none;
 
-      &:hover {
-        color: #2295f7;
+            &:hover {
+                color: #2295f7;
+
+                .icon {
+                    color: #2295f7;
+                }
+            }
+        }
 
         .icon {
-          color: #2295f7;
+            margin-right: 10px;
+            font-size: 16px;
+
+            transition: color 0.2s linear;
+            color: #ffffff;
         }
-      }
     }
-
-    .icon {
-      margin-right: 10px;
-      font-size: 16px;
-
-      transition: color 0.2s linear;
-      color: #ffffff;
-    }
-  }
 }
 
 .footer-logo {
-  font-size: 18px;
-  color: #ffffff;
+    font-size: 18px;
+    color: #ffffff;
 }
 
 .footer-about {
-  width: 200px;
+    width: 200px;
 
-  margin: 0;
-  padding: 15px 0 0 0;
-  list-style-type: none;
+    margin: 0;
+    padding: 15px 0 0 0;
+    list-style-type: none;
 
-  font-size: 14px;
-  color: $gray-500;
+    font-size: 14px;
+    color: $gray-500;
 
-  > .crm {
-  }
-
-  > .copyright {
-  }
-
-  li {
-    margin: 5px 0 5px 0;
-
-    &:first-child {
-      margin: 0 0 5px 0;
+    > .crm {
     }
 
-    &:last-child {
-      margin: 5px 0 0 0;
+    > .copyright {
     }
 
-    &:only-child {
-      margin: 0 0 0 0;
+    li {
+        margin: 5px 0 5px 0;
+
+        &:first-child {
+            margin: 0 0 5px 0;
+        }
+
+        &:last-child {
+            margin: 5px 0 0 0;
+        }
+
+        &:only-child {
+            margin: 0 0 0 0;
+        }
     }
-  }
 }

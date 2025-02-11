@@ -12,25 +12,25 @@ body {
 
 html,
 body {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 .website {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 .website {
-  margin: 0 auto;
+    margin: 0 auto;
 
-  // min-width: 320px;
-  // max-width: 1920px;
+    // min-width: 320px;
+    // max-width: 1920px;
 
-  background: #ffffff;
+    background: #ffffff;
 
-  display: grid;
+    display: grid;
 
-  // header: auto | fixed
-  // content: 1fr
-  // footer auto
-  grid-template-rows: auto 1fr auto;
+    // header: auto | fixed
+    // content: 1fr
+    // footer auto
+    grid-template-rows: auto 1fr auto;
 }

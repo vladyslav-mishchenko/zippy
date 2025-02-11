@@ -1,32 +1,32 @@
 {
-  "name": "zippy-project",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "format": "prettier . --write"
-  },
-  "browserslist": [
-    "cover 99.5%"
-  ],
-  "devDependencies": {
-    "autoprefixer": "^10.4.15",
-    "postcss": "^8.4.35",
-    "postcss-sort-media-queries": "^5.2.0",
-    "prettier": "^3.4.2",
-    "sass": "^1.65.1",
-    "typescript": "^5.5.3",
-    "vite": "^4.4.5",
-    "vite-plugin-handlebars": "^2.0.0",
-    "vite-plugin-inspect": "^0.7.38"
-  },
-  "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3",
-    "path": "^0.12.7",
-    "resolve": "^1.22.4"
-  }
+    "name": "zippy-project",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "format": "prettier . --write"
+    },
+    "browserslist": [
+        "cover 99.5%"
+    ],
+    "devDependencies": {
+        "autoprefixer": "^10.4.15",
+        "postcss": "^8.4.35",
+        "postcss-sort-media-queries": "^5.2.0",
+        "prettier": "^3.4.2",
+        "sass": "^1.65.1",
+        "typescript": "^5.5.3",
+        "vite": "^4.4.5",
+        "vite-plugin-handlebars": "^2.0.0",
+        "vite-plugin-inspect": "^0.7.38"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "^5.3.3",
+        "path": "^0.12.7",
+        "resolve": "^1.22.4"
+    }
 }

@@ -6,52 +6,52 @@
 @import '../node_modules/bootstrap/scss/root';
 
 .header {
-  z-index: 1000;
+    z-index: 1000;
 
-  .navbar-brand {
-    font-size: 1.4rem;
-  }
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
 }
 
 .lang {
-  color: $green-100;
+    color: $green-100;
 }
 
 .main-menu {
-  padding-right: 25px;
+    padding-right: 25px;
 
-  @include media-breakpoint-only(lg) {
-    padding-right: 20px;
-  }
-
-  @include media-breakpoint-down(lg) {
-    padding-right: 0;
-  }
-
-  > .nav-item {
-    // font-size: 17px;
-
-    > .nav-link {
-      transition: color 0.2s linear;
-
-      &:hover {
-        color: #2295f7 !important;
-      }
+    @include media-breakpoint-only(lg) {
+        padding-right: 20px;
     }
-  }
 
-  .dropdown-menu {
-    .dropdown-item {
-      padding: 2px 10px;
-      transition: color 0.2s linear;
-
-      @include media-breakpoint-down(lg) {
-        font-size: 1rem;
-      }
-
-      &:hover {
-        color: #2295f7 !important;
-      }
+    @include media-breakpoint-down(lg) {
+        padding-right: 0;
     }
-  }
+
+    > .nav-item {
+        // font-size: 17px;
+
+        > .nav-link {
+            transition: color 0.2s linear;
+
+            &:hover {
+                color: #2295f7 !important;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        .dropdown-item {
+            padding: 2px 10px;
+            transition: color 0.2s linear;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 1rem;
+            }
+
+            &:hover {
+                color: #2295f7 !important;
+            }
+        }
+    }
 }

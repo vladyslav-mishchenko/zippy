@@ -4,39 +4,39 @@
 @import '../node_modules/bootstrap/scss/mixins';
 
 .about {
-  .c1 {
-    padding: 0 50px 0 0;
-    @include make-col(6);
-    @include media-breakpoint-down(lg) {
-      padding: 0 10px 0 10px;
-      @include make-col(12);
+    .c1 {
+        padding: 0 50px 0 0;
+        @include make-col(6);
+        @include media-breakpoint-down(lg) {
+            padding: 0 10px 0 10px;
+            @include make-col(12);
+        }
     }
-  }
 
-  .c2 {
-    @include make-col(6);
-    @include media-breakpoint-down(lg) {
-      padding-top: 25px;
-      @include make-col(12);
+    .c2 {
+        @include make-col(6);
+        @include media-breakpoint-down(lg) {
+            padding-top: 25px;
+            @include make-col(12);
+        }
     }
-  }
 }
 
 #ytplayer {
-  display: block;
-  margin: 0 auto;
-  aspect-ratio: 16/9;
-  width: 100%;
-  height: auto;
+    display: block;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
 }
 
 .article-about {
-  p {
-  }
+    p {
+    }
 
-  .accent {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: $info-text-emphasis;
-  }
+    .accent {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: $info-text-emphasis;
+    }
 }

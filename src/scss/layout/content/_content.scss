@@ -12,75 +12,75 @@
 }
 
 .article {
-  display: grid;
-  padding: 50px 0 50px 0;
+    display: grid;
+    padding: 50px 0 50px 0;
 
-  word-wrap: anywhere;
+    word-wrap: anywhere;
 }
 
 .article {
-  h1 {
-    text-align: center;
-    padding-bottom: 25px;
-    scroll-margin-top: 80px;
-  }
-
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    scroll-margin-top: 80px;
-  }
-
-  p {
-    margin: 0 0 1rem 0;
-  }
-
-  ul {
-    margin: 0 0 1rem 0;
-    padding: 0;
-    list-style-type: none;
-
-    li {
+    h1 {
+        text-align: center;
+        padding-bottom: 25px;
+        scroll-margin-top: 80px;
     }
-  }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        scroll-margin-top: 80px;
+    }
+
+    p {
+        margin: 0 0 1rem 0;
+    }
+
+    ul {
+        margin: 0 0 1rem 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+        }
+    }
 }
 
 .article {
-  .page-nav {
-    li {
+    .page-nav {
+        li {
+        }
+
+        .title {
+            margin: 10px 0;
+        }
     }
 
-    .title {
-      margin: 10px 0;
+    .page-subnav {
+        margin: 0;
+        padding: 0 0 0 15px;
     }
-  }
-
-  .page-subnav {
-    margin: 0;
-    padding: 0 0 0 15px;
-  }
 }
 
 .article {
-  a {
-    code {
-      color: inherit;
+    a {
+        code {
+            color: inherit;
+        }
     }
-  }
-
-  code {
-    color: #bb0000;
-  }
-
-  pre {
-    border-radius: 5px;
-    padding: 10px 25px;
-    background-color: #cfcfcf;
 
     code {
-      color: #212529;
+        color: #bb0000;
     }
-  }
+
+    pre {
+        border-radius: 5px;
+        padding: 10px 25px;
+        background-color: #cfcfcf;
+
+        code {
+            color: #212529;
+        }
+    }
 }

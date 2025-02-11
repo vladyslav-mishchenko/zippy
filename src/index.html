@@ -1,274 +1,314 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    {{> head}}
-  </head>
+    <head>
+        {{> head}}
+    </head>
 
-  <body class="body">
-    <div class="website">
-      {{> header}}
+    <body class="body">
+        <div class="website">
+            {{> header}}
 
-      <!-- content -->
-      <main class="content">
-        <div class="main-banner">
-          <div class="container">
-            <div class="main-banner--row">
-              <div class="c1">
-                <h1>CRM система для складського обліку та торгівлі</h1>
-                <p class="description">Альтернатива для 1С та інших платних рішень</p>
-              </div>
-            </div>
-          </div>
+            <!-- content -->
+            <main class="content">
+                <div class="main-banner">
+                    <div class="container">
+                        <div class="main-banner--row">
+                            <div class="c1">
+                                <h1>CRM система для складського обліку та торгівлі</h1>
+                                <p class="description">
+                                    Альтернатива для 1С та інших платних рішень
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-          <div class="overlay"></div>
+                    <div class="overlay"></div>
+                </div>
+
+                <div class="hero">
+                    <div class="container">
+                        <div class="row info">
+                            <div class="c1">
+                                <ul class="hero-list">
+                                    <li>Склад, торгівля, послуги, виробництво</li>
+                                    <li>Налаштована на вітчизняне законодавство</li>
+                                    <li>Орієнтована на малий бізнес</li>
+                                    <li>Веб інтефейс, відкритий код (open-source)</li>
+                                    <li>Розповсюджується безкоштовно</li>
+                                </ul>
+                                <ul class="hero-links">
+                                    <li>
+                                        <a class="btn btn-primary btn-info" href="#" role="button"
+                                            >Демо сайт</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="btn btn-primary btn-warning"
+                                            href="#"
+                                            role="button"
+                                            >Як встановити</a
+                                        >
+                                    </li>
+                                </ul>
+                                <ul class="repository-links">
+                                    <li>
+                                        <i class="icon icon-github"></i> Проект на
+                                        <a href="#" class="link link-danger"> GitHub </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="c2">
+                                <picture>
+                                    <img
+                                        src="./images/hero.png"
+                                        class="img-fluid img-thumbnail"
+                                        alt="..."
+                                    />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="about" class="page-block about">
+                    <div class="container">
+                        <h2 class="pb-5 text-center">Про проект</h2>
+                        <div class="row">
+                            <div class="c1">
+                                <div class="quote-video" id="ytplayer"></div>
+                            </div>
+
+                            <div class="c2">
+                                <article class="article-about">
+                                    <p>
+                                        <span class="accent">Zippy CRM</span> - це вільно
+                                        росповсюджуване ПЗ з відкритим кодом та веб-інтерфейсом,
+                                        призначене для автоматизації малого бізнесу. Облікова
+                                        система орієнтована на вітчизняний ринок, має звичний
+                                        інтерфейс, проста в установці та налаштуванні, з модульною
+                                        архітектурою, що дозволяє легко адаптувати її під вимоги
+                                        бізнесу.
+                                    </p>
+                                    <p>
+                                        Стандартний документообіг, звичний для вітчизняних
+                                        користувчів (особливо звиклих до 1С) інтерфейс, можливість
+                                        багатокористувацької роботи та роботи через Інтернет з будь
+                                        якого мобільного пристрою.
+                                    </p>
+                                    <p>
+                                        Мета проекту - надати альтернативу платним та/або зарубіжним
+                                        обліковим програмам.
+                                    </p>
+                                    <p>
+                                        Використано найпростіший та найпоширеніший технологічний
+                                        стек (PHP/Mysql), що забезпечує кросплатформенність та
+                                        можливість установки на будь якому хостингу або офісному
+                                        комп'ютері для індивідуального використання. З точки зору
+                                        архітектури проект є платформою, де основні об'єкти -
+                                        документи, довідники, звіти можуть додаватись, видалятись та
+                                        замінюватись без внесення змін в ядро платформи та структуру
+                                        бази данних.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-block opportunities">
+                    <div class="container">
+                        <h2 class="pb-5 text-center">Можливості</h2>
+                        <div class="row info">
+                            <div class="c1">
+                                <h3>Функції</h3>
+                                <ul class="opportunities-functions">
+                                    <li>Управління складами, складська логістика</li>
+                                    <li>Управління закупівлями та продажами</li>
+                                    <li>Облік платежів та взаєморозрахунки з контрагентами</li>
+                                    <li>Облік по партіях товару та серіях виробника</li>
+                                    <li>Управління користувачами та розділення доступу</li>
+                                    <li>Контрагенти, робота з лідами</li>
+                                    <li>Можливість локалізації</li>
+                                    <li>Звіти по продажам, закупкам, руху ТМЦ</li>
+                                    <li>Послуги, наряди на виконання робіт</li>
+                                    <li>
+                                        Списання на виробництво та оприходування готової продукції
+                                    </li>
+                                    <li>Облік обладнання</li>
+                                </ul>
+                            </div>
+
+                            <div class="c2">
+                                <h3>Інтеграції</h3>
+                                <ul class="opportunities-integrations">
+                                    <li>API для обміну з іншми інформаційними системами</li>
+                                    <li>Підтримка сканера (клавіатурного) штрих коду</li>
+                                    <li>Підтримка принтера чеків та етикеток</li>
+                                    <li>
+                                        Розділення доступу між філіями (наприклад, торговими
+                                        точками)
+                                    </li>
+                                    <li>Інтеграція з Опенкарт та Вукомерс</li>
+                                    <li>SMS розсилки</li>
+                                    <li>Інтеграція з Новою Поштою</li>
+                                    <li>Інтеграція з CheckBox та ВчасноКаса</li>
+                                    <li>Вбудований (безкоштовний) програмний РРО</li>
+                                    <li>
+                                        Рiзноманiтнi модулі та додатки (управління проектами, база
+                                        знань та ін.).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row demo">
+                            <div class="c1">
+                                <h4>Доступ до тестовго сайту:</h4>
+                                <ul class="demo-credentials">
+                                    <li>логін: admin</li>
+                                    <li>пароль: admin</li>
+                                </ul>
+                                <p class="demo-about">Демо сайт є повноцінною версією програми</p>
+                            </div>
+
+                            <div class="c2">
+                                <ul class="demo-links">
+                                    <li>
+                                        <a class="btn btn-primary btn-info" href="#" role="button"
+                                            >Перейти</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="btn btn-primary btn-warning"
+                                            href="#"
+                                            role="button"
+                                            >Як завантажити</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-block advantages">
+                    <div class="container">
+                        <h2 class="pb-5 text-center">Переваги рішення</h2>
+
+                        <div class="advantages-cards">
+                            <div class="card">
+                                <div class="image">
+                                    <i class="icon-code-5"></i>
+                                </div>
+
+                                <div class="title">
+                                    <h5>Відкритий код</h5>
+                                </div>
+
+                                <div class="text">
+                                    <p>
+                                        Простота розширення та налаштування під будь який тип
+                                        бізнесу та мінливе законодавство
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="image">
+                                    <i class="icon-business"></i>
+                                </div>
+
+                                <div class="title">
+                                    <h5>Під будь який бізнес</h5>
+                                </div>
+
+                                <div class="text">
+                                    <p>
+                                        Простота розширення та налаштування під будь який тип
+                                        бізнесу та мінливе законодавство
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="image">
+                                    <i class="icon-cross-platform"></i>
+                                </div>
+
+                                <div class="title">
+                                    <h5>Кросплатформенність</h5>
+                                </div>
+
+                                <div class="text">
+                                    <p>
+                                        З програмою можна повноцінно працювати як всередині
+                                        корпоративної мережі, так і онлайн
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="image">
+                                    <i class="icon-adaptive"></i>
+                                </div>
+
+                                <div class="title">
+                                    <h5>Адаптивний інтефейс</h5>
+                                </div>
+
+                                <div class="title">
+                                    <p>
+                                        Веб-інтерфейс дозволяє повноцінно працювати з будь яких
+                                        пристроїв, у тому числі мобільних
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="image">
+                                    <i class="icon-coat-of-arms"></i>
+                                </div>
+
+                                <div class="title">
+                                    <h5>Налаштовано під законодавство</h5>
+                                </div>
+
+                                <div class="text">
+                                    <p>
+                                        Базове налаштування під вітчизняне законодавство.
+                                        Передбачено експорт в електронний формат обміну
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="image">
+                                    <i class="icon-online-trading"></i>
+                                </div>
+
+                                <div class="title">
+                                    <h5>Онлайн-торгівля</h5>
+                                </div>
+
+                                <div class="text">
+                                    <p>
+                                        Інтеграція з поширеними інтернет магазинами. Вбудований
+                                        онлайн-каталог
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- end content -->
+
+            {{> footer}}
         </div>
 
-        <div class="hero">
-          <div class="container">
-            <div class="row info">
-              <div class="c1">
-                <ul class="hero-list">
-                  <li>Склад, торгівля, послуги, виробництво</li>
-                  <li>Налаштована на вітчизняне законодавство</li>
-                  <li>Орієнтована на малий бізнес</li>
-                  <li>Веб інтефейс, відкритий код (open-source)</li>
-                  <li>Розповсюджується безкоштовно</li>
-                </ul>
-                <ul class="hero-links">
-                  <li><a class="btn btn-primary btn-info" href="#" role="button">Демо сайт</a></li>
-                  <li>
-                    <a class="btn btn-primary btn-warning" href="#" role="button">Як встановити</a>
-                  </li>
-                </ul>
-                <ul class="repository-links">
-                  <li>
-                    <i class="icon icon-github"></i> Проект на
-                    <a href="#" class="link link-danger"> GitHub </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="c2">
-                <picture>
-                  <img src="./images/hero.png" class="img-fluid img-thumbnail" alt="..." />
-                </picture>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="about" class="page-block about">
-          <div class="container">
-            <h2 class="pb-5 text-center">Про проект</h2>
-            <div class="row">
-              <div class="c1">
-                <div class="quote-video" id="ytplayer"></div>
-              </div>
-
-              <div class="c2">
-                <article class="article-about">
-                  <p>
-                    <span class="accent">Zippy CRM</span> - це вільно росповсюджуване ПЗ з відкритим
-                    кодом та веб-інтерфейсом, призначене для автоматизації малого бізнесу. Облікова
-                    система орієнтована на вітчизняний ринок, має звичний інтерфейс, проста в
-                    установці та налаштуванні, з модульною архітектурою, що дозволяє легко
-                    адаптувати її під вимоги бізнесу.
-                  </p>
-                  <p>
-                    Стандартний документообіг, звичний для вітчизняних користувчів (особливо звиклих
-                    до 1С) інтерфейс, можливість багатокористувацької роботи та роботи через
-                    Інтернет з будь якого мобільного пристрою.
-                  </p>
-                  <p>
-                    Мета проекту - надати альтернативу платним та/або зарубіжним обліковим
-                    програмам.
-                  </p>
-                  <p>
-                    Використано найпростіший та найпоширеніший технологічний стек (PHP/Mysql), що
-                    забезпечує кросплатформенність та можливість установки на будь якому хостингу
-                    або офісному комп'ютері для індивідуального використання. З точки зору
-                    архітектури проект є платформою, де основні об'єкти - документи, довідники,
-                    звіти можуть додаватись, видалятись та замінюватись без внесення змін в ядро
-                    платформи та структуру бази данних.
-                  </p>
-                </article>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="page-block opportunities">
-          <div class="container">
-            <h2 class="pb-5 text-center">Можливості</h2>
-            <div class="row info">
-              <div class="c1">
-                <h3>Функції</h3>
-                <ul class="opportunities-functions">
-                  <li>Управління складами, складська логістика</li>
-                  <li>Управління закупівлями та продажами</li>
-                  <li>Облік платежів та взаєморозрахунки з контрагентами</li>
-                  <li>Облік по партіях товару та серіях виробника</li>
-                  <li>Управління користувачами та розділення доступу</li>
-                  <li>Контрагенти, робота з лідами</li>
-                  <li>Можливість локалізації</li>
-                  <li>Звіти по продажам, закупкам, руху ТМЦ</li>
-                  <li>Послуги, наряди на виконання робіт</li>
-                  <li>Списання на виробництво та оприходування готової продукції</li>
-                  <li>Облік обладнання</li>
-                </ul>
-              </div>
-
-              <div class="c2">
-                <h3>Інтеграції</h3>
-                <ul class="opportunities-integrations">
-                  <li>API для обміну з іншми інформаційними системами</li>
-                  <li>Підтримка сканера (клавіатурного) штрих коду</li>
-                  <li>Підтримка принтера чеків та етикеток</li>
-                  <li>Розділення доступу між філіями (наприклад, торговими точками)</li>
-                  <li>Інтеграція з Опенкарт та Вукомерс</li>
-                  <li>SMS розсилки</li>
-                  <li>Інтеграція з Новою Поштою</li>
-                  <li>Інтеграція з CheckBox та ВчасноКаса</li>
-                  <li>Вбудований (безкоштовний) програмний РРО</li>
-                  <li>Рiзноманiтнi модулі та додатки (управління проектами, база знань та ін.).</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="row demo">
-              <div class="c1">
-                <h4>Доступ до тестовго сайту:</h4>
-                <ul class="demo-credentials">
-                  <li>логін: admin</li>
-                  <li>пароль: admin</li>
-                </ul>
-                <p class="demo-about">Демо сайт є повноцінною версією програми</p>
-              </div>
-
-              <div class="c2">
-                <ul class="demo-links">
-                  <li><a class="btn btn-primary btn-info" href="#" role="button">Перейти</a></li>
-                  <li>
-                    <a class="btn btn-primary btn-warning" href="#" role="button">Як завантажити</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="page-block advantages">
-          <div class="container">
-            <h2 class="pb-5 text-center">Переваги рішення</h2>
-
-            <div class="advantages-cards">
-              <div class="card">
-                <div class="image">
-                  <i class="icon-code-5"></i>
-                </div>
-
-                <div class="title">
-                  <h5>Відкритий код</h5>
-                </div>
-
-                <div class="text">
-                  <p>
-                    Простота розширення та налаштування під будь який тип бізнесу та мінливе
-                    законодавство
-                  </p>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="image">
-                  <i class="icon-business"></i>
-                </div>
-
-                <div class="title">
-                  <h5>Під будь який бізнес</h5>
-                </div>
-
-                <div class="text">
-                  <p>
-                    Простота розширення та налаштування під будь який тип бізнесу та мінливе
-                    законодавство
-                  </p>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="image">
-                  <i class="icon-cross-platform"></i>
-                </div>
-
-                <div class="title">
-                  <h5>Кросплатформенність</h5>
-                </div>
-
-                <div class="text">
-                  <p>
-                    З програмою можна повноцінно працювати як всередині корпоративної мережі, так і
-                    онлайн
-                  </p>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="image">
-                  <i class="icon-adaptive"></i>
-                </div>
-
-                <div class="title">
-                  <h5>Адаптивний інтефейс</h5>
-                </div>
-
-                <div class="title">
-                  <p>
-                    Веб-інтерфейс дозволяє повноцінно працювати з будь яких пристроїв, у тому числі
-                    мобільних
-                  </p>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="image">
-                  <i class="icon-coat-of-arms"></i>
-                </div>
-
-                <div class="title">
-                  <h5>Налаштовано під законодавство</h5>
-                </div>
-
-                <div class="text">
-                  <p>
-                    Базове налаштування під вітчизняне законодавство. Передбачено експорт в
-                    електронний формат обміну
-                  </p>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="image">
-                  <i class="icon-online-trading"></i>
-                </div>
-
-                <div class="title">
-                  <h5>Онлайн-торгівля</h5>
-                </div>
-
-                <div class="text">
-                  <p>Інтеграція з поширеними інтернет магазинами. Вбудований онлайн-каталог</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      <!-- end content -->
-
-      {{> footer}}
-    </div>
-
-    {{> scripts}}
-  </body>
+        {{> scripts}}
+    </body>
 </html>

@@ -4,59 +4,59 @@
 @import '../node_modules/bootstrap/scss/mixins';
 
 .accordion-faq {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-
-  .accordion-body {
-    padding: 15px 25px;
-
-    @include media-breakpoint-down(md) {
-      padding: 5px 15px;
-    }
-  }
-
-  .accordion-header {
-    margin: 0;
-    padding: 0;
-    font-size: 1.4rem;
-
-    @include media-breakpoint-down(md) {
-      font-size: 1.1rem;
-    }
-  }
-
-  .accordion-button {
-    width: 100%;
-
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 25px;
 
-    border: none;
-    border-radius: 5px;
+    .accordion-body {
+        padding: 15px 25px;
 
-    padding: 20px 25px;
-
-    // text-align: left;
-    background-color: #343f51;
-    color: #ffffff;
-
-    @include media-breakpoint-down(md) {
-      padding: 10px 15px;
+        @include media-breakpoint-down(md) {
+            padding: 5px 15px;
+        }
     }
 
-    .icon {
-      font-size: 16px;
-      transition: all 0.3s ease;
-      transform: rotate(45deg);
-    }
-  }
+    .accordion-header {
+        margin: 0;
+        padding: 0;
+        font-size: 1.4rem;
 
-  .collapsed {
-    .icon {
-      transform: rotate(0deg);
+        @include media-breakpoint-down(md) {
+            font-size: 1.1rem;
+        }
     }
-  }
+
+    .accordion-button {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        border: none;
+        border-radius: 5px;
+
+        padding: 20px 25px;
+
+        // text-align: left;
+        background-color: #343f51;
+        color: #ffffff;
+
+        @include media-breakpoint-down(md) {
+            padding: 10px 15px;
+        }
+
+        .icon {
+            font-size: 16px;
+            transition: all 0.3s ease;
+            transform: rotate(45deg);
+        }
+    }
+
+    .collapsed {
+        .icon {
+            transform: rotate(0deg);
+        }
+    }
 }

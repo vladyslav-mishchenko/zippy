@@ -1,129 +1,129 @@
 @font-face {
-  font-family: 'icons';
-  src: url('fonts/icons/icons.eot?lbhb46');
-  src:
-    url('fonts/icons/icons.eot?lbhb46#iefix') format('embedded-opentype'),
-    url('fonts/icons/icons.ttf?lbhb46') format('truetype'),
-    url('fonts/icons/icons.woff?lbhb46') format('woff'),
-    url('fonts/icons/icons.svg?lbhb46#icons') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+    font-family: 'icons';
+    src: url('fonts/icons/icons.eot?lbhb46');
+    src:
+        url('fonts/icons/icons.eot?lbhb46#iefix') format('embedded-opentype'),
+        url('fonts/icons/icons.ttf?lbhb46') format('truetype'),
+        url('fonts/icons/icons.woff?lbhb46') format('woff'),
+        url('fonts/icons/icons.svg?lbhb46#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
 }
 
 [class^='icon-'],
 [class*=' icon-'] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icons' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-plus-white:before {
-  content: '\e900';
+    content: '\e900';
 }
 .icon-plus-1:before {
-  content: '\e901';
+    content: '\e901';
 }
 .icon-online-trading:before {
-  content: '\e902';
+    content: '\e902';
 }
 .icon-mail:before {
-  content: '\e903';
+    content: '\e903';
 }
 .icon-cross-platform:before {
-  content: '\e904';
-  font-size: 140px;
+    content: '\e904';
+    font-size: 140px;
 }
 .icon-code-5:before {
-  content: '\e905';
+    content: '\e905';
 }
 .icon-code-4:before {
-  content: '\e906';
+    content: '\e906';
 }
 .icon-code-3:before {
-  content: '\e907';
+    content: '\e907';
 }
 .icon-code-2:before {
-  content: '\e908';
+    content: '\e908';
 }
 .icon-code-1:before {
-  content: '\e909';
+    content: '\e909';
 }
 .icon-coat-of-arms:before {
-  content: '\e90a';
+    content: '\e90a';
 }
 .icon-check:before {
-  content: '\e90b';
+    content: '\e90b';
 }
 .icon-card:before {
-  content: '\e90c';
+    content: '\e90c';
 }
 .icon-business:before {
-  content: '\e90d';
+    content: '\e90d';
 }
 .icon-attention:before {
-  content: '\e90e';
+    content: '\e90e';
 }
 .icon-arrow-down:before {
-  content: '\e90f';
+    content: '\e90f';
 }
 .icon-adaptive:before {
-  content: '\e910';
+    content: '\e910';
 }
 .icon-download3:before {
-  content: '\e9c7';
+    content: '\e9c7';
 }
 .icon-upload3:before {
-  content: '\e9c8';
+    content: '\e9c8';
 }
 .icon-sphere:before {
-  content: '\e9c9';
+    content: '\e9c9';
 }
 .icon-warning:before {
-  content: '\ea07';
+    content: '\ea07';
 }
 .icon-notification:before {
-  content: '\ea08';
+    content: '\ea08';
 }
 .icon-question:before {
-  content: '\ea09';
+    content: '\ea09';
 }
 .icon-plus:before {
-  content: '\ea0a';
+    content: '\ea0a';
 }
 .icon-minus:before {
-  content: '\ea0b';
+    content: '\ea0b';
 }
 .icon-info:before {
-  content: '\ea0c';
+    content: '\ea0c';
 }
 .icon-cross:before {
-  content: '\ea0f';
+    content: '\ea0f';
 }
 .icon-checkmark:before {
-  content: '\ea10';
+    content: '\ea10';
 }
 .icon-telegram:before {
-  content: '\ea95';
+    content: '\ea95';
 }
 .icon-youtube:before {
-  content: '\ea9d';
+    content: '\ea9d';
 }
 .icon-github:before {
-  content: '\eab0';
+    content: '\eab0';
 }
 .icon-skype:before {
-  content: '\eac5';
+    content: '\eac5';
 }
 .icon-linkedin:before {
-  content: '\eac9';
+    content: '\eac9';
 }

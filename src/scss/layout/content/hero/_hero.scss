@@ -4,126 +4,126 @@
 @import '../node_modules/bootstrap/scss/mixins';
 
 .hero {
-  position: relative;
+    position: relative;
 
-  padding-top: 50px;
-  padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
 
-  background-color: #343f51;
+    background-color: #343f51;
 
-  @include media-breakpoint-down(lg) {
-    padding-top: 25px;
-  }
-
-  .info {
-    padding-top: 25px;
-
-    > .c1 {
-      @include make-col(5);
-
-      @include media-breakpoint-only(lg) {
-        @include make-col(6);
-      }
-
-      @include media-breakpoint-down(lg) {
-        @include make-col(12);
-      }
+    @include media-breakpoint-down(lg) {
+        padding-top: 25px;
     }
 
-    > .c2 {
-      @include make-col(7);
+    .info {
+        padding-top: 25px;
 
-      @include media-breakpoint-only(lg) {
-        @include make-col(6);
-      }
+        > .c1 {
+            @include make-col(5);
 
-      @include media-breakpoint-down(lg) {
-        padding-top: 50px;
-        @include make-col(12);
-      }
+            @include media-breakpoint-only(lg) {
+                @include make-col(6);
+            }
+
+            @include media-breakpoint-down(lg) {
+                @include make-col(12);
+            }
+        }
+
+        > .c2 {
+            @include make-col(7);
+
+            @include media-breakpoint-only(lg) {
+                @include make-col(6);
+            }
+
+            @include media-breakpoint-down(lg) {
+                padding-top: 50px;
+                @include make-col(12);
+            }
+        }
     }
-  }
 
-  .github {
-    .c1 {
+    .github {
+        .c1 {
+        }
     }
-  }
 }
 
 .hero-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 
-  li {
-    position: relative;
+    li {
+        position: relative;
 
-    margin: 5px 0 5px 0;
-    padding: 0 0 0 25px;
+        margin: 5px 0 5px 0;
+        padding: 0 0 0 25px;
 
-    &:first-child {
-      margin: 0 0 5px 0;
+        &:first-child {
+            margin: 0 0 5px 0;
+        }
+
+        &:last-child {
+            margin: 5px 0 0 0;
+        }
+
+        &:only-child {
+            margin: 0 0 0 0;
+        }
+
+        color: #ffffff;
+
+        &::before {
+            width: 20px;
+            height: 20px;
+
+            position: absolute;
+            top: 0;
+            right: auto;
+            bottom: auto;
+            left: 0;
+
+            font-family: 'icons';
+            font-size: 16px;
+            color: #ffffff;
+
+            content: '\e90b';
+
+            margin-right: 5px;
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+        }
     }
-
-    &:last-child {
-      margin: 5px 0 0 0;
-    }
-
-    &:only-child {
-      margin: 0 0 0 0;
-    }
-
-    color: #ffffff;
-
-    &::before {
-      width: 20px;
-      height: 20px;
-
-      position: absolute;
-      top: 0;
-      right: auto;
-      bottom: auto;
-      left: 0;
-
-      font-family: 'icons';
-      font-size: 16px;
-      color: #ffffff;
-
-      content: '\e90b';
-
-      margin-right: 5px;
-    }
-
-    @include media-breakpoint-down(md) {
-      font-size: 16px;
-    }
-  }
 }
 
 .hero-links {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 
-  margin-top: 25px;
+    margin-top: 25px;
 
-  display: flex;
-  gap: 25px;
+    display: flex;
+    gap: 25px;
 }
 
 .repository-links {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 
-  margin-top: 25px;
+    margin-top: 25px;
 
-  li {
-    color: #ffffff;
-    font-weight: bold;
+    li {
+        color: #ffffff;
+        font-weight: bold;
 
-    .link {
-      margin: 0 10px;
+        .link {
+            margin: 0 10px;
+        }
     }
-  }
 }
