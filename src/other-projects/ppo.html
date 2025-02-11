@@ -54,7 +54,7 @@ $signeddata = \PPOLib\PPO::sign('{"Command":"Objects"}', $key, $cert);
                 <p>Відправка запиту в податкову</p>
 
                 <pre><code class="php"> 
-$answer = \PPOLib\PPO::send($signeddata,'cmd');
+$answer = \PPOLib\PPO::send($signeddata, 'cmd');
 
 </code></pre>
 
@@ -64,7 +64,7 @@ $answer = \PPOLib\PPO::send($signeddata,'cmd');
                 </p>
 
                 <pre><code class="php"> 
-$data = \PPOLib\PPO::decrypt($answer,true);
+$data = \PPOLib\PPO::decrypt($answer, true);
 
 </code></pre>
               </article>
