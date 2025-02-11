@@ -26,23 +26,44 @@
                 </p>
 
                 <ul>
-                  <li>Основной репозитарий на Гитхабе</li>
-                  <li>Описание идеи в статье на Хабре</li>
-                  <li>Документация по классам библиотеки ZDB\DB</li>
+                  <li>
+                    Основной репозитарий на
+                    <a target="_blank" href="https://github.com/leon-mbs/zdb">Гитхабе</a>
+                  </li>
+                  <li>
+                    Описание идеи в статье на
+                    <a target="_blank" href="https://habrahabr.ru/post/282844/">Хабре</a>
+                  </li>
+                  <li>
+                    <a href="/api/namespace-ZDB.html" target="_blank">Документация</a> по классам
+                    библиотеки ZDB\DB
+                  </li>
                 </ul>
+
+                <p>
+                  <a target="_blank" href="/apiZDB.DB.html"><code>ZDB\DB</code></a>
+                </p>
 
                 <p>
                   Класс, реализующий коннект к БД. Синглетон-обертка для ADODB. Для инициализации
                   необходимо передать параметры соединения.
                 </p>
 
-                <p>\ZCL\DB\DB::config($host, $dbname,$dbuser,$dbpass,[$driver=mysqli]);</p>
+                <pre><code class="php">
+\ZCL\DB\DB::config($host, $dbname, $dbuser, $dbpass, [$driver=mysqli]);
+
+</code></pre>
 
                 <p>Получение коннекта (для нативных запросов)</p>
 
-                <p>DB::getConnect();</p>
+                <pre><code class="php">
+DB::getConnect();
 
-                <p>ZDB\Entity</p>
+</code></pre>
+
+                <p>
+                  <a target="_blank" href="/apiZDB.Entity.html"><code>ZDB\Entity</code></a>
+                </p>
 
                 <p>Основной класс библиотеки, являющийся базовым для всех Entity.</p>
 
@@ -50,14 +71,18 @@
 
                 <pre><code class="sql">
 CREATE TABLE  `users` (
-              `username` varchar(255) ,
-              `updated` date  ,
+              `username` varchar(255),
+              `updated` date,
               `user_id` int(11) NOT NULL AUTO_INCREMENT,
                PRIMARY KEY (`user_id`)
 )
-               </code></pre>
 
-                <p>Создадим класс сущности Пользователь на основе класса ZDB\Entity</p>
+</code></pre>
+
+                <p>
+                  Создадим класс сущности Пользователь на основе класса
+                  <a href="/apiZDB.Entity.html"><code>ZDB\Entity</code></a>
+                </p>
 
                 <pre><code class="php">
 /**
@@ -67,20 +92,21 @@ CREATE TABLE  `users` (
 class User extends Entity{
                   
   protected function init() {
-    $this-&gt;user_id = 0;
-    $this-&gt;updated = time();
+    $this->user_id = 0;
+    $this->updated = time();
   }
                   
   protected function afterLoad() {
-    $this-&gt;updated = strtotime($this-&gt;updated);
+    $this->updated = strtotime($this-&gt;updated);
   }    
 }
+
 </code></pre>
 
                 <p>
                   Если у нас есть представление для выборки пользователей, например usersview, тогда
-                  мы указываем в псевдоаннотациях @view=usersview. В этом случае выборка данных
-                  будет идти из представления, а запись в таблцу.
+                  мы указываем в псевдоаннотациях <code>@view=usersview</code>. В этом случае
+                  выборка данных будет идти из представления, а запись в таблцу.
                 </p>
 
                 <p>
@@ -104,30 +130,31 @@ class User extends Entity{
 //загрузка пользователя.
 $user = User::load($id);
                     
-//записать  пользователя с  новыми  значениями.
-$user-&gt;username='newname';
-$user-&gt;updated = time();
-$user-&gt;save();
+//записать пользователя с новыми значениями.
+$user->username = 'newname';
+$user->updated = time();
+$user->save();
                   
 //новый пользователь
-//если $user-&gt;user_id равен 0 создается новая запись  и полю $user-&gt;user_id  
-//присваивается значение  из  автоинкрементного поля.
+//если $user->user_id равен 0 создается новая запись  и полю $user-&gt;user_id  
+//присваивается значение из автоинкрементного поля.
 $user = new  User();
-$user-&gt;username='newname';
-$user-&gt;save();
+$user->username = 'newname';
+$user->save();
                     
-//удаление  пользователя
+// удаление  пользователя
 User::delete($id);
                     
-//найти всех  пользователей кроме  админа
+// найти всех  пользователей кроме  админа
 $users = User::find("username &lt;&gt; 'admin'");
                   
 //найти количество  пользователей
 $users = User::findCnt();
                     
-//вернуть имена  пользователей в  виде  массива  ключ/значение
+// вернуть имена  пользователей в виде массива ключ/значение
 // например для  комбобокса
-$users = User::findArray("username","","username asc");
+$users = User::findArray("username", "", "username asc");
+
 </code></pre>
 
                 <p>

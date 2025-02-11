@@ -16,14 +16,25 @@
   padding: 50px 0 50px 0;
 
   word-wrap: anywhere;
+}
 
-  p {
-    margin: 0 0 1rem 0;
-  }
-
+.article {
   h1 {
     text-align: center;
     padding-bottom: 25px;
+    scroll-margin-top: 80px;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    scroll-margin-top: 80px;
+  }
+
+  p {
+    margin: 0 0 1rem 0;
   }
 
   ul {
@@ -37,10 +48,6 @@
 }
 
 .article {
-  .page-nav--target {
-    scroll-margin-top: 80px;
-  }
-
   .page-nav {
     li {
     }
@@ -57,12 +64,23 @@
 }
 
 .article {
+  a {
+    code {
+      color: inherit;
+    }
+  }
+
+  code {
+    color: #bb0000;
+  }
+
   pre {
     border-radius: 5px;
     padding: 10px 25px;
     background-color: #cfcfcf;
 
     code {
+      color: #212529;
     }
   }
 }
