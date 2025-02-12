@@ -140,23 +140,31 @@
 
                                 <p><strong>Основні бізнес-сутності:</strong></p>
 
-                                <ul>
-                                    <li>
-                                        <strong>ТМЦ</strong>
-                                        <span>товари, матеріали, продукція</span>
-                                    </li>
-                                    <li><strong>Склади</strong> <span>склади, магазини</span></li>
-                                    <li>
-                                        <strong>Контрагенти</strong>
-                                        <span>постачальники, покупці</span>
-                                    </li>
-                                    <li>
-                                        <strong>Документи</strong>
-                                        <span
-                                            >первинні документи фіксують господарські операції</span
-                                        >
-                                    </li>
-                                </ul>
+                                <div class="page-table">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td><b>ТМЦ</b></td>
+                                                <td>товари, матеріали, продукція</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Склади</b></td>
+                                                <td>склади, магазини</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Контрагенти</b></td>
+                                                <td>постачальники, покупці</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>Документи</b></td>
+                                                <td>
+                                                    первинні документи фіксують господарські
+                                                    операції
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
                                 <p>
                                     У відповідності з архітектурою фреймворка, всі бізнес-суті
@@ -280,7 +288,83 @@
                                     сумісності документів та правильної работи бізнес-логіки .
                                 </p>
 
-                                <p>table</p>
+                                <div class="page-table">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td>headerdata['author']</td>
+                                                <td>Автор (створювач) документа</td>
+                                            </tr>
+                                            <tr>
+                                                <td>user_id</td>
+                                                <td>
+                                                    Користувач ассоційований з документом. За
+                                                    замовчанням- автор
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>customer_id</td>
+                                                <td>Коннтрагент (якщо заданий)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>branch_id</td>
+                                                <td>Філія,якщо ввімкнена підтримка</td>
+                                            </tr>
+                                            <tr>
+                                                <td>firm_id</td>
+                                                <td>Компанія</td>
+                                            </tr>
+                                            <tr>
+                                                <td>parent_id</td>
+                                                <td>Батьківський документ (підства)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>state</td>
+                                                <td>Статус</td>
+                                            </tr>
+                                            <tr>
+                                                <td>headerdata['store']</td>
+                                                <td>id складу</td>
+                                            </tr>
+                                            <tr>
+                                                <td>headerdata['time']</td>
+                                                <td>Час (document_date має тільки дату)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>headerdata['payment']</td>
+                                                <td>
+                                                    id грошового рахунку для оплати (каса, банк)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>amount</td>
+                                                <td>Сума по документу (по позиціях)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>payamount</td>
+                                                <td>
+                                                    Сума дл сплати (amount мінус наприклад знижка)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>payed</td>
+                                                <td>Фактична оплата (сума по таблиці платажів)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>headerdata['payed']</td>
+                                                <td>
+                                                    Внесена оплата. Для відповідного поля на
+                                                    сторінці редагування документу. Може не
+                                                    збігатись з payed наприклад при частковій оплаті
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>headerdata['detaildata']</td>
+                                                <td>Упакована таблична частина.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
                                 <p>
                                     Всі об'єкти зареєстровані в таблиці метаданих на відповідній
@@ -361,7 +445,239 @@
                                     операцій виконується через відповідні Entity
                                 </p>
 
-                                <p>table</p>
+                                <div class="page-table">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td><b>branches</b></td>
+                                                <td>Філії</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>contracts</b></td>
+                                                <td>Договори. Пов'язують компанію і контрагента</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>crontask</b></td>
+                                                <td>Завдання планувальника</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>custacc</b></td>
+                                                <td>
+                                                    Балансові рахунки контрагентів. При проведенні
+                                                    документу виконується рух по дебету обо кредиту.
+                                                    Позитивнмй баланс - кредитовий борг фірми,
+                                                    негативний - дебетовий. Також в таблиці
+                                                    Зберігаются нараховані бонуси
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>custitems</b></td>
+                                                <td>Товари у постачальника</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>customers</b></td>
+                                                <td>Контрагенти</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>docstatelog</b></td>
+                                                <td>Исторія статусів документіа</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>documents</b></td>
+                                                <td>
+                                                    Документи. Поля: amount - сума по документу,
+                                                    payamount - до сплаты, payed - оплачено (сума по
+                                                    таблиці payments)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>empacc</b></td>
+                                                <td>
+                                                    Особовий рахунок співробітника. В першу чергу
+                                                    для руху по зарплаті.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>employees</b></td>
+                                                <td>
+                                                    CСпівробітники. Поле login з'єднує з
+                                                    користувачем системи (аккаунтом)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>entrylist</b></td>
+                                                <td>Рух по складу</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>equipments</b></td>
+                                                <td>Основні засоби та обладнання</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>eventlist</b></td>
+                                                <td>
+                                                    Події, використовуєтся для контрагентів і
+                                                    завдань
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>files</b></td>
+                                                <td>Загружені файли</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>filesdata</b></td>
+                                                <td>
+                                                    Зміст файлів. Окрема таблиця щоб не грузити всю
+                                                    БД
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>firms</b></td>
+                                                <td>Компанії</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>images</b></td>
+                                                <td>Зображення</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>iostate</b></td>
+                                                <td>Записи прибутків та видатків</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>issue_*</b></td>
+                                                <td>Таблиці модуля Проекти та завдання</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>item_cat</b></td>
+                                                <td>Категорії (групи) ТМЦ</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>item_set</b></td>
+                                                <td>Комплекти для ТМЦ</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>items</b></td>
+                                                <td>Номенклатура ТМЦ</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>keyval</b></td>
+                                                <td>
+                                                    Допоміжна таблиця для даних типу ключ-значення
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>messages</b></td>
+                                                <td>Повідомлення</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>metadata</b></td>
+                                                <td>
+                                                    Бізнес-об'єкти (документє, довідники, щвіти,
+                                                    журналм... Формує меню програми)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>mfund</b></td>
+                                                <td>Грошові рахунки рахунки</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>note_*</b></td>
+                                                <td>Таблиці модуля Органайзер</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>notifies</b></td>
+                                                <td>Повідомлення</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>options</b></td>
+                                                <td>
+                                                    Загальні налаштування та налаштування модулів
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>parealist</b></td>
+                                                <td>Виробничі дільниці</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>paylist</b></td>
+                                                <td>Оплати (рух по грошових рахунках)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>poslist</b></td>
+                                                <td>POS термінали</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>prodproc</b></td>
+                                                <td>Виробничі процеси</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>prodstage</b></td>
+                                                <td>Виробничі етапм</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>prodstageagenda</b></td>
+                                                <td>Розклад этапів</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>promocodes</b></td>
+                                                <td>Промо коди</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>roles</b></td>
+                                                <td>Ролі користувачів</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>saltypes</b></td>
+                                                <td>Типи нарахувань та утримань по зарплаті</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>services</b></td>
+                                                <td>Послуги, роботи</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>shop_*</b></td>
+                                                <td>Таблиці онлайн-каталогу</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>stats</b></td>
+                                                <td>Службова таблиця для статистичних даних</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>store_stock</b></td>
+                                                <td>
+                                                    Партії товарів. Пов'язує товар, склади та
+                                                    облікові ціни. Поле qty (кількість)
+                                                    вираховується за допомогою триггерів при зміні
+                                                    таблиці entrylist Поле partion - облікова ціна.
+                                                    Додаткова розбивка якщо ввімкнений облік по
+                                                    серіях
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>stores</b></td>
+                                                <td>Склади</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>subscribes</b></td>
+                                                <td>Підписки</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>taglist</b></td>
+                                                <td>Теги</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>timesheet</b></td>
+                                                <td>Облік робочого часу</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>users</b></td>
+                                                <td>
+                                                    Користувачі системи. admin - невидялюваний
+                                                    користувач
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </article>
                         </div>
                     </div>

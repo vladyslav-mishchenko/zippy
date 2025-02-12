@@ -11,6 +11,11 @@
 .content {
 }
 
+.page-block {
+    margin: 50px 0;
+    scroll-margin-top: 70px;
+}
+
 .article {
     display: grid;
     padding: 50px 0 50px 0;
@@ -90,5 +95,13 @@
         code {
             color: #212529;
         }
+    }
+}
+
+.article {
+    .page-table {
+        overflow: scroll;
+        word-wrap: break-word;
+        margin-bottom: 1rem;
     }
 }
