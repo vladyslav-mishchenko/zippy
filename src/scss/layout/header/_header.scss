@@ -8,6 +8,10 @@
 .header {
     z-index: 1000;
 
+    .navbar{
+        padding: 0.2rem 0;
+    }
+
     .navbar-brand {
         font-size: 1.4rem;
     }
@@ -16,7 +20,7 @@
 .navbar-brand {
     .logo {
         display: block;
-        width: 110px;
+        width: 120px;
         height: auto;
     }
 }
