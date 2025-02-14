@@ -189,8 +189,6 @@ $users = User::findArray("username", "", "username asc");
             {{> footer}}
         </div>
 
-        {{> contacts-form}}
-
-        {{> scripts}}
+        {{> contacts-form}} {{> scripts}}
     </body>
 </html>
